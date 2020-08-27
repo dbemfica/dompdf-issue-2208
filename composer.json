@@ -1,7 +1,6 @@
 {
     "require": {
         "dompdf/dompdf": "^0.8.5",
-        "twig/twig": "^3.0",
         "iio/libmergepdf": "^4.0"
     }
 }

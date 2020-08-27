@@ -3,11 +3,9 @@ require 'vendor/autoload.php';
 use Dompdf\Dompdf;
 use iio\libmergepdf\Merger;
 
-$loader = new \Twig\Loader\FilesystemLoader('.');
-$twig = new \Twig\Environment($loader, [ 'cache' => false,]);
-$html = $twig->render('index.twig');
+$html = '<p>A assinatura deste TERMO DE CONTRATAÇÃO representa expressa concordância do CLIENTE às cláusulas do CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE COMUNICAÇÃO MULTIMÍDIA</p>';
 
-$dompdf = new Dompdf(['isPhpEnabled' => true, 'isRemoteEnabled' => true, 'isHtml5ParserEnabled' => true, 'defaultPaperSize' => 'A4']);
+$dompdf = new Dompdf();
 
 $merger = new Merger();
 
